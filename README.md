@@ -2,6 +2,17 @@
 > **Biến bàn phím Bluetooth thành bàn phím USB cắm dây siêu nhạy, hỗ trợ chế độ BIOS (Boot Protocol).**
 > **Turn any Bluetooth keyboard into a ultra-low latency wired USB keyboard, with BIOS (Boot Protocol) support.**
 
+## 💾 Pre-built Firmware / Bản Build Sẵn (Releases)
+Bạn có thể tải bản build sẵn (Production firmware) trong phần [Releases](https://github.com/hieuht2203/esp32s3-ble-to-usb-keyboard-bridge/releases) để nạp trực tiếp vào ESP32-S3 Zero tại địa chỉ `0x0`.
+You can download the pre-compiled Production firmware binary from the [Releases](https://github.com/hieuht2203/esp32s3-ble-to-usb-keyboard-bridge/releases) page to flash directly to the ESP32-S3 Zero at address `0x0`.
+
+### ⚡ Cách nạp nhanh (How to Flash):
+* **Web Flasher (Dễ nhất / Easiest):** Sử dụng Chrome/Edge truy cập [ESP Web Flasher](https://espressif.github.io/esptool-js/), kết nối ESP32, chọn file `.bin` đã tải và nạp vào địa chỉ `0x0` (Offset `0`).
+* **Command Line:** Sử dụng esptool:
+  ```bash
+  esptool.py --chip esp32s3 write_flash 0x0 esp32s3_ble_to_usb_keyboard_bridge_v1.0.bin
+  ```
+
 ---
 
 ## 🇻🇳 TIẾNG VIỆT - HƯỚNG DẪN SỬ DỤNG
