@@ -1,0 +1,6 @@
+{
+    "clangd.arguments": [
+        "--compile-commands-dir=d:/Cac-du-an-ESP/ESP32-S3_BT-to-USB_Bridge/.cache/clangd",
+        "--query-driver=C:/Users/HIEUHUYNH/.platformio/packages/toolchain-*/bin/*,C:/Users/HIEUHUYNH/.platformio/packages/tool-*/bin/*"
+    ]
+}
