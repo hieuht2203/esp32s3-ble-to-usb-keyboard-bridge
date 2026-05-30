@@ -50,10 +50,9 @@ Dự án được quản lý bằng **PlatformIO** trong VS Code.
 * Trong file `platformio.ini`: Thiết lập `-D ARDUINO_USB_CDC_ON_BOOT=0`
 * Tiến hành nạp code. Thiết bị sẽ hoạt động như bàn phím USB thuần túy.
 
-#### 🔄 Cách Ghép Đôi Bàn Phím Mới
-1. Nhấn và **giữ nút BOOT** trên ESP32 trong **3 giây** cho đến khi LED sáng màu VÀNG rực. Thiết bị sẽ xóa bộ nhớ và tự khởi động lại.
-2. Bật chế độ ghép đôi (Pairing Mode) trên bàn phím của bạn.
-3. ESP32 sẽ tự động dò tìm, kết nối và lưu khóa bảo mật (Bonding) của bàn phím mới vào bộ nhớ Flash.
+#### 🔄 Hướng dẫn Ghép đôi (How to Pair)
+* **Ghép đôi lần đầu:** Bật chế độ pairing trên bàn phím của bạn. Cắm điện cho ESP32, thiết bị sẽ tự động quét, kết nối và khóa bảo mật (Bonding) với bàn phím.
+* **Xóa kết nối cũ để ghép đôi bàn phím mới:** Nhấn giữ nút **BOOT** trên mạch ESP32 trong **3 giây** (đèn LED sáng màu vàng rực rồi khởi động lại). Sau đó bật chế độ pairing trên bàn phím mới để kết nối.
 
 ---
 
@@ -92,7 +91,6 @@ For daily use (keyboard working immediately in BIOS/GRUB):
 * In `platformio.ini`: Set `-D ARDUINO_USB_CDC_ON_BOOT=0`
 * Flash the code. The device will emulate a pure USB keyboard.
 
-#### 🔄 Pairing a New Keyboard
-1. Press and **hold the BOOT button** on the ESP32 for **3 seconds** until the LED turns bright yellow. The device will clear its bond memory and restart.
-2. Put your Bluetooth keyboard into pairing mode.
-3. The ESP32 will automatically scan, connect, and persist the bonding key of the new keyboard in its Flash storage.
+#### 🔄 Pairing Instructions (How to Pair)
+* **First-time Pairing:** Turn on pairing mode on your Bluetooth keyboard. Power up the ESP32, and it will automatically scan, connect, and save the security bond (Bonding) with your keyboard.
+* **Clear Old Bonds to Pair a New Keyboard:** Press and hold the physical **BOOT** button on the ESP32 for **3 seconds** (the LED will turn solid bright yellow and the device will restart). Then, turn on pairing mode on your new keyboard to connect.
